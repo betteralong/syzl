@@ -18,6 +18,7 @@
   display: flex;
   align-items: center;
   height: 1.12rem;
+  margin-bottom: 0.2rem;
   padding: 0.20rem 0.22rem;
   border-radius: 0.08rem;
   box-shadow: 0 0 0.16rem 0.08rem rgba(49, 150, 250, 0.1);
