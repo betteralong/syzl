@@ -9,6 +9,15 @@
         </div>
       </div>
     </div>
+        <div class="content-wrap">
+      <div class="content-title">平安达标考核</div>
+      <div class="content">
+        <div class="content-item" v-for="(item, index) in content1" :key="index">
+          <div class="content-label">{{item.label}}</div>
+          <div class="content-value">{{item.value}}</div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
