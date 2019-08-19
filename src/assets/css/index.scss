@@ -10,7 +10,7 @@
 }
 
 .content-wrap{
-  padding-top: 0.28rem;
+  padding-top: 0.28rem 0 0.28rem 0;
   border-bottom: 1px dashed rgba(238, 238, 238, 1);
   &:first{
     padding-top: 0;
@@ -23,7 +23,7 @@
   }
   .content-title{
     color: #333;
-    padding-bottom: 0.2rem;
+    padding: 0.24rem 0 0.2rem 0;
     font-size: 0.32rem;
     text-align: left;
     font-weight: 600;
@@ -35,6 +35,9 @@
       align-items: center;
       font-size: 0.28rem;
       padding-bottom: 0.2rem;
+      &:last-child{
+        padding: none;
+      }
       .content-label{
         color: #333;
       }
