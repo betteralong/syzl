@@ -1,29 +1,47 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <header-com></header-com>
+    <div class="app-container">
+      <top-tip></top-tip>
+      <menu-com :menus="menus"></menu-com>
+      <router-view/>
     </div>
-    <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+import menuCom from '@/components/menuCom'
+import topTip from '@/components/topTip'
+import headerCom from '@/components/headerCom'
+export default {
+  data() {
+    return {
+      menus: [{
+        name: 'khzb', // 路由的name
+        label: '考核指标',
+      }, {
+        name: 'jczy',
+        label: '基础资源'
+      }, {
+        name: 'ywzb',
+        label: '业务指标'
+      }, {
+        name: 'cjjz',
+        label: '场景进展'
+      }]
     }
+  },
+  components: {
+    headerCom,
+    topTip,
+    menuCom
   }
+}
+</script>
+
+<style lang="scss">
+.app-container{
+  background: #EEEEEE;
+  padding: 0.2rem 0.28rem;
 }
 </style>

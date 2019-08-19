@@ -1,0 +1,28 @@
+
+.page{
+  background: #fff;
+  padding: 0.24rem 0.34rem 0.2rem;
+}
+.content-wrap{
+  .content-title{
+    color: #333;
+    font-size: 0.32rem;
+    text-align: left;
+    font-weight: 600;
+  }
+  .content{
+    .content-item{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.28rem;
+      padding-bottom: 0.2rem;
+      .content-label{
+        color: #333;
+      }
+      .content-value{
+        color:  #3196FA;
+      }
+    }
+  }
+}
