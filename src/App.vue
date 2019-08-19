@@ -40,7 +40,13 @@ export default {
 </script>
 
 <style lang="scss">
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .app-container{
+  flex: 1;
   background: #EEEEEE;
   padding: 0.2rem 0.28rem;
 }

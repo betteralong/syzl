@@ -1,8 +1,15 @@
 
 .page{
   background: #fff;
-  padding: 0.24rem 0.34rem 0.2rem;
+  padding: 0 0.34rem 0.2rem;
 }
+
+.more{
+  text-align: center;
+  color: #589BFF;
+  padding-bottom: 0.26rem;
+}
+
 .content-wrap{
   padding-top: 0.28rem;
   border-bottom: 1px dashed rgba(238, 238, 238, 1);
@@ -11,6 +18,9 @@
   }
   &:last-child{
     border: none;
+    .more{
+      padding: none;
+    }
   }
   .content-title{
     color: #333;
@@ -32,6 +42,43 @@
       .content-value{
         color:  #3196FA;
       }
+    }
+  }
+  .content-block{
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    .content-block-item{
+      width: 50%;
+      margin-bottom: 0.34rem;
+      text-align: center;
+      &:nth-child(2n) {
+        border-left: 1px dashed #EEE;
+      }
+      .content-label{
+        font-size: 0.28rem;
+        color: #333;
+        padding-bottom: 0.1rem;
+      }
+      .content-value{
+        font-size: 0.36rem;
+        color:  #3196FA;
+      }
+    }
+  }
+  .content-center{
+    text-align: center;
+    .content-center-item{
+      margin-bottom: 0.34rem;
+    }
+    .content-label{
+      font-size: 0.28rem;
+      color: #333;
+    }
+    .content-value{
+      font-size: 0.36rem;
+      color:  #3196FA;
+      padding-bottom: 0.1rem;
     }
   }
 }

@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-        <div class="content-wrap">
+    <div class="content-wrap">
       <div class="content-title">平安达标考核</div>
       <div class="content">
         <div class="content-item" v-for="(item, index) in content1" :key="index">
@@ -90,8 +90,5 @@ export default {
 </script>
 
 <style lang="scss">
-.page{
-  background: #fff;
 
-}
 </style>
