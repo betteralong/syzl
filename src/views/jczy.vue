@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="content-wrap">
-      <div class="content-title">平安过程性考核</div>
+      <div class="content-title">社会治理单元</div>
       <div class="content">
         <div class="content-item" v-for="(item, index) in content1" :key="index">
           <div class="content-label">{{item.label}}</div>
@@ -39,16 +39,16 @@ export default {
         label: '区县基层治理综合信息指挥中心',
         value: 1
       },{
-        label: '区县基层治理综合信息指挥中心',
+        label: '镇街综合信息指挥室',
         value: 1
       },{
-        label: '区县基层治理综合信息指挥中心',
+        label: '村社综合信息工作站',
         value: 1
       },{
-        label: '区县基层治理综合信息指挥中心',
+        label: '治安小区',
         value: 1
       },{
-        label: '区县基层治理综合信息指挥中心',
+        label: '网格',
         value: 1
       }],
       content2: [{

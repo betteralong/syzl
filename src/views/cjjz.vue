@@ -15,7 +15,15 @@
         </div>
       </div>
       <div class="content">
-        <div class="content-title">区县总数排名</div>
+        <div class="title-wrap">
+          <div class="content-title">区县总数排名</div>
+          <div class="tip-wrap">
+            <div>总量</div>
+            <div>采集</div>
+            <div>调用</div>
+            <div>一码多址</div>
+          </div>
+        </div>
         <div class="content-item" v-for="(item, index) in content5" :key="index">
           <div class="content-label">{{item.label}}</div>
           <div class="content-value">{{item.value}}</div>
@@ -108,6 +116,23 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss">
+.title-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .tip-wrap{
+    display: flex;
+    >div{
+      font-size: 0.28rm;
+      color: #999;
+      padding: 0 0.12rem;
+      border-right: 1px solid #eee;
+      &:last-child{
+        border: none;
+      }
+    }
+  }
+}
 
 </style>

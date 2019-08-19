@@ -10,7 +10,19 @@
       </div>
     </div>
     <div class="content-wrap">
-      <div class="content-title">平安达标考核</div>
+      <div class="title-wrap">
+        <div class="content-title">平安达标考核</div>
+        <div class="tip-info">
+          <div class="tip-info">
+            <div class="tip-info-color1"></div>
+            <div class="tip-info-label">达标</div>
+          </div>
+          <div class="tip-info">
+            <div class="tip-info-color2"></div>
+            <div class="tip-info-label">不达标</div>
+          </div>
+        </div>
+      </div>
       <div class="content">
         <div class="content-item" v-for="(item, index) in content1" :key="index">
           <div class="content-label">{{item.label}}</div>
@@ -90,5 +102,28 @@ export default {
 </script>
 
 <style lang="scss">
-
+  .title-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .tip-info{
+    display: flex;
+    align-items: center;
+    margin-left: 0.3rem;
+    .tip-info-color1{
+      width: 0.54rem;
+      height: 0.26rem;
+      border-radius: 0.2rem;
+      background: #8BC34A;
+      margin-right: 0.06rem;
+    }
+    .tip-info-color2{
+      width: 0.54rem;
+      height: 0.26rem;
+      border-radius: 0.2rem;
+      margin-right: 0.06rem;
+      background: #E51C23;
+    }
+  }
 </style>
